@@ -1,6 +1,6 @@
 provider "azurerm" {
-  subscription-id = "bdac0c99-2d95-4820-ab92-0fb4b612911a"
-  tenant-id = "547010cd-32ba-49d1-b612-28bdbc33ee90"
-  client-id = ""
-  client-secret = ""
+  subscription-id = "${TF_VAR_az_subscription_id}"
+  tenant-id = "${TF_VAR_az_tenant_id}"
+  client-id = "${TF_VAR_az_client_id}"
+  client-secret = "${TF_VAR_az_client_secret}"
 }
